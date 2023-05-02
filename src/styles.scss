@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+
+html, body { 
+  height: 100%;
+  background-color: #2f3038;
+}
+body {
+   margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+  }
+
+img {
+  width: 100%;
+  background-color: #162569;
+  &:hover {
+    opacity: 0.5;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: all 0.5 ease-in-out;
+  }
+}

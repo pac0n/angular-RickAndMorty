@@ -1,0 +1,12 @@
+<div class="content">
+    <mat-form-field>
+        <input
+            #inputSearch 
+            autofocus 
+            matInput 
+            type="text" 
+            placeholder="Search..."
+            (keyup)="onSearch(inputSearch.value)"
+        >
+    </mat-form-field>
+</div>

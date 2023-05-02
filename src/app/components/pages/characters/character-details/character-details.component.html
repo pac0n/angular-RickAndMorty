@@ -1,0 +1,19 @@
+<mat-grid-list cols="1" *ngIf="character$ | async as character" rowHeight="450px" fxLayout="row wrap" fxLayout.lt-sm="column">
+    <mat-grid-tile fxFlex="33.33%" fxFlex.lt-md="50%" fxFlex.lt-sm="100%">
+        <mat-card>
+            <img 
+                [src]="character.image" 
+                [alt]="character.name"
+            />
+            <mat-card-content>
+                <h2>{{ character.name | slice: 0:15 }}</h2>
+                <h4>{{ character.gender }}</h4>
+                <small>{{ character.created | date }}</small>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<button (click)="onGoBack()" mat-raised-button color="primary">
+    Back
+</button>
